@@ -46,7 +46,7 @@ jobs:
       - name: Overwrite and Print
         env:
           OVERWRITTEN: 'Overwritten at step level'
-        run: "New Overwriiten ${{env.OVERWRITTEN}}"
+        run: echo "New Overwriiten ${{env.OVERWRITTEN}}"
 
   functions-pr-data:
     runs-on: ubuntu-latest
