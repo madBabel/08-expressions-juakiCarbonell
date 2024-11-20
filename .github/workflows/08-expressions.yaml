@@ -64,7 +64,7 @@ jobs:
       
       - name: Sleep and Cancel
         if: ${{ contains(github.event.pull_request.title ,'fix') }}
-        run: echo "sleep 20"
+        run: sleep 20
       
       - name: Failing Step
         if: ${{inputs.fail}}
