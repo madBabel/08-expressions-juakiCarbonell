@@ -31,7 +31,7 @@ jobs:
           echo ""Runner OS: ${{ runner.os }}""
       
       - name: \[Debug\] Triggered from Main
-        if: ${{inputs.debug && github.ref_name == 'main' }}
+        if: ${{inputs.debug && github.ref_name == 'main'}}
         run: echo "Triggered from main branch!"
 
       - name: Print Variables
