@@ -41,7 +41,7 @@ jobs:
           echo "Step var ${{ env.STEP_VAR }}"
           echo "${{ env.JOB_VAR }}"
           echo "${{ env.WORKFLOW_VAR }}"
-          echo "${{ env.OVERWRITTEN }}""
+          echo "${{ env.OVERWRITTEN }}"
       
       - name: Overwrite and Print
         env:
