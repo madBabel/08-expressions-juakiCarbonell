@@ -51,7 +51,7 @@ jobs:
   functions-pr-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Print PR labels
+      - name: Print PR Info
         if: ${{ github.event_name == 'pull_request' }}
         run: |
           cat << EOF
